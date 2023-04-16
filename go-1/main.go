@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"high-perf/io/usebuffer"
 	"high-perf/io/useconcurrent"
+	usemergeconcurrent "high-perf/sorting/useMergeConcurrent"
 	"high-perf/sorting/usemerge"
-	"high-perf/sorting/usemergeconcurrent"
 	"runtime"
 	"sort"
 
@@ -123,5 +123,6 @@ func main() {
 		fmt.Printf("Merge concurrent technique (cpu: %v)\n", *cpu)
 		usemergeconcurrent.Init(*inputFile, *outputFile, int64(*cpu))
 		usemergeconcurrent.Run()
+	case "debug":
 	}
 }
