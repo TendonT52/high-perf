@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"high-perf/io/usebuffer"
 	"high-perf/io/useconcurrent"
-	usemergeconcurrent "high-perf/sorting/useMergeConcurrent"
 	"high-perf/sorting/usemerge"
+	"high-perf/sorting/usemergeconcurrent"
 	"runtime"
 	"sort"
 
